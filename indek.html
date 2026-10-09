@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanda Kartika Maulani - Portofolio Perencanaan & Analisis Data</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Inter & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-navy-900 tracking-tight">
+                Nanda<span class="text-gold-500">Kartika</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-gold-600 transition-colors">Tentang Saya</a>
+                <a href="#experience" class="hover:text-gold-600 transition-colors">Pengalaman</a>
+                <a href="#skills" class="hover:text-gold-600 transition-colors">Keahlian</a>
+                <a href="#contact" class="hover:text-gold-600 transition-colors">Kontak</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="#contact" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-navy-900 hover:bg-gold-600 rounded-md transition-colors shadow-sm">
+                    Hubungi Saya
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-8 space-y-6">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 bg-gold-400/10 border border-gold-500/30 rounded-full text-gold-600 text-xs font-medium">
+                    <span class="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+                    <span>Perencanaan Wilayah & Kota | Analisis Spasial & Kebijakan</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-navy-900 leading-tight">
+                    Mengakselerasi Pembangunan Berkelanjutan Melalui Data Spasial & Kebijakan Tepat
+                </h1>
+                <p class="text-lg text-slate-600 max-w-2xl">
+                    Halo, saya <strong>Nanda Kartika Maulani</strong>. Lulusan Perencanaan Wilayah dan Kota dari Institut Teknologi Sumatera dengan keahlian dalam GIS, analisis data, perencanaan transportasi, serta penyusunan dokumen lingkungan.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#experience" class="px-6 py-3 bg-navy-900 text-white font-medium text-sm rounded-lg hover:bg-navy-800 transition-all shadow-md hover:shadow-lg">
+                        Lihat Pengalaman & Proyek
+                    </a>
+                    <a href="https://www.linkedin.com/in/nandakartika" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-white text-navy-900 font-medium text-sm rounded-lg border border-slate-300 hover:border-gold-500 hover:text-gold-600 transition-all shadow-sm">
+                        <i class="fab fa-linkedin mr-2"></i> Profil LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-4 flex justify-center">
+                <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-2xl bg-gradient-to-tr from-navy-900 to-gold-500 p-1 shadow-2xl">
+                    <div class="w-full h-full bg-white rounded-xl flex flex-col items-center justify-center p-6 text-center">
+                        <div class="w-24 h-24 bg-navy-800 text-gold-400 rounded-full flex items-center justify-center text-4xl font-bold mb-4">
+                            NKM
+                        </div>
+                        <h3 class="font-bold text-navy-900">S1 Perencanaan Wilayah & Kota</h3>
+                        <p class="text-xs text-slate-500 mt-1">Institut Teknologi Sumatera</p>
+                        <span class="mt-3 px-3 py-1 bg-slate-100 text-navy-900 font-semibold text-xs rounded-full">
+                            IPK: 3.42 / 4.00
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="py-20 bg-white border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-gold-600 mb-2">Tentang Saya</h2>
+                <h3 class="text-3xl font-bold text-navy-900">Membangun Ruang & Lingkungan Berkelanjutan</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 hover:border-gold-500 transition-colors">
+                    <div class="w-12 h-12 bg-gold-400/20 text-gold-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy-900 mb-2">Analisis Spasial & GIS</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Terampil menggunakan ArcGIS, QGIS, dan Avenza untuk pemetaan, analisis lalu lintas, klasifikasi kelas jalan, serta perencanaan tata ruang wilayah.
+                    </p>
+                </div>
+                <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 hover:border-gold-500 transition-colors">
+                    <div class="w-12 h-12 bg-navy-800/10 text-navy-900 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy-900 mb-2">Dokumen Lingkungan</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Memiliki pengalaman menyusun dokumen UKL-UPL, analisis dampak lingkungan, serta kajian isu lingkungan berkelanjutan secara terstruktur.
+                    </p>
+                </div>
+                <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 hover:border-gold-500 transition-colors">
+                    <div class="w-12 h-12 bg-gold-400/20 text-gold-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy-900 mb-2">Analisis Data & Kebijakan</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Menguasai Nvivo, IBM SPSS, dan Ms. Office untuk pengolahan data kualitatif/kuantitatif serta perumusan rekomendasi kebijakan daerah.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE & PROJECTS SECTION -->
+    <section id="experience" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs uppercase font-bold tracking-widest text-gold-600 mb-2">Pengalaman & Proyek</h2>
+            <h3 class="text-3xl font-bold text-navy-900">Rekam Jejak Profesional & Organisasi</h3>
+        </div>
+
+        <div class="space-y-12">
+            <!-- Magang -->
+            <div>
+                <h4 class="text-xl font-bold text-navy-900 mb-6 flex items-center">
+                    <i class="fas fa-briefcase text-gold-500 mr-3"></i> Pengalaman Magang
+                </h4>
+                <div class="bg-white rounded-xl p-6 md:p-8 shadow-sm border border-slate-200 hover:border-gold-400 transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 pb-4 border-b border-slate-100">
+                        <div>
+                            <h5 class="text-lg font-bold text-navy-900">Magang Divisi Bina Marga</h5>
+                            <p class="text-slate-600 text-sm font-medium">Dinas Bina Marga dan Sumber Daya Air Kota Bekasi</p>
+                        </div>
+                        <span class="mt-2 md:mt-0 text-xs font-semibold px-3 py-1 bg-slate-100 text-slate-600 rounded-full w-max">
+                            Juni 2025 - Agustus 2025
+                        </span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-slate-600 list-disc list-inside">
+                        <li>Menyusun dokumen UKL-UPL proyek Jembatan Kemang Pratama, mencakup analisis kondisi lingkungan dan identifikasi potensi dampak.</li>
+                        <li>Terlibat dalam melakukan survei lapangan serta pengukuran batas lahan pada proyek pelebaran jalan Pekayon.</li>
+                        <li>Menganalisis dan menyusun laporan klasifikasi kelas jalan Kota Bekasi berdasarkan analisis Lalu Lintas Harian Rata-rata (LHR), fungsi jalan, dan analisis spasial menggunakan ArcGIS.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Organisasi -->
+            <div>
+                <h4 class="text-xl font-bold text-navy-900 mb-6 flex items-center">
+                    <i class="fas fa-users text-gold-500 mr-3"></i> Pengalaman Organisasi
+                </h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- UKM Persitera -->
+                    <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200 hover:border-gold-400 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h5 class="font-bold text-navy-900">Sekretaris Umum</h5>
+                                <p class="text-xs text-slate-500">UKM Persitera</p>
+                            </div>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 text-slate-600 rounded">
+                                Juni 2025 - April 2026
+                            </span>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-600 list-disc list-inside">
+                            <li>Menyusun timeline program kerja dan agenda organisasi selama satu periode kepengurusan.</li>
+                            <li>Menyusun 15+ surat menyurat, proposal kegiatan, notulensi rapat, dan laporan pertanggungjawaban secara sistematis.</li>
+                            <li>Melakukan koordinasi pada 5 divisi dalam penyampaian informasi dan tindak lanjut program kerja.</li>
+                        </ul>
+                    </div>
+
+                    <!-- HMP Mandalanata ITERA -->
+                    <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200 hover:border-gold-400 transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h5 class="font-bold text-navy-900">Staff Kajian</h5>
+                                <p class="text-xs text-slate-500">Himpunan Mahasiswa Perencana Mandalanata ITERA</p>
+                            </div>
+                            <span class="text-xs font-medium px-2.5 py-1 bg-slate-100 text-slate-600 rounded">
+                                Juni 2024 - April 2025
+                            </span>
+                        </div>
+                        <ul class="space-y-2 text-xs text-slate-600 list-disc list-inside">
+                            <li>Menyusun 3 kajian isu lingkungan (identifikasi masalah, analisis data, survei eksisting, & perumusan rekomendasi).</li>
+                            <li>Memandu podcast bersama akademisi untuk membahas isu banjir serta menggali perspektif ahli.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-gold-600 mb-2">Keahlian & Kemampuan</h2>
+                <h3 class="text-3xl font-bold text-navy-900">Perangkat Lunak, Bahasa & Soft Skills</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Technical Skills -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <h4 class="text-sm font-bold text-navy-900 uppercase tracking-wider mb-4 pb-2 border-b border-slate-200">
+                        Technical Skills
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-navy-900 text-white text-xs rounded-full font-medium">ArcGIS</span>
+                        <span class="px-3 py-1 bg-navy-900 text-white text-xs rounded-full font-medium">QGIS</span>
+                        <span class="px-3 py-1 bg-navy-900 text-white text-xs rounded-full font-medium">Google Earth</span>
+                        <span class="px-3 py-1 bg-navy-900 text-white text-xs rounded-full font-medium">IBM SPSS</span>
+                        <span class="px-3 py-1 bg-navy-900 text-white text-xs rounded-full font-medium">Avenza</span>
+                        <span class="px-3 py-1 bg-navy-900 text-white text-xs rounded-full font-medium">Nvivo</span>
+                        <span class="px-3 py-1 bg-navy-900 text-white text-xs rounded-full font-medium">Data Analysis</span>
+                        <span class="px-3 py-1 bg-navy-900 text-white text-xs rounded-full font-medium">Canva</span>
+                        <span class="px-3 py-1 bg-navy-900 text-white text-xs rounded-full font-medium">Ms. Office (Excel, Word, PPT)</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <h4 class="text-sm font-bold text-navy-900 uppercase tracking-wider mb-4 pb-2 border-b border-slate-200">
+                        Soft Skills
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gold-500/20 text-gold-600 text-xs rounded-full font-medium border border-gold-500/30">Komunikasi</span>
+                        <span class="px-3 py-1 bg-gold-500/20 text-gold-600 text-xs rounded-full font-medium border border-gold-500/30">Kerjasama Tim</span>
+                        <span class="px-3 py-1 bg-gold-500/20 text-gold-600 text-xs rounded-full font-medium border border-gold-500/30">Pemecahan Masalah</span>
+                        <span class="px-3 py-1 bg-gold-500/20 text-gold-600 text-xs rounded-full font-medium border border-gold-500/30">Manajemen Waktu</span>
+                        <span class="px-3 py-1 bg-gold-500/20 text-gold-600 text-xs rounded-full font-medium border border-gold-500/30">Adaptasi</span>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                    <h4 class="text-sm font-bold text-navy-900 uppercase tracking-wider mb-4 pb-2 border-b border-slate-200">
+                        Bahasa
+                    </h4>
+                    <div class="space-y-3 text-xs">
+                        <div>
+                            <div class="flex justify-between font-medium mb-1">
+                                <span class="text-navy-900">Indonesia</span>
+                                <span class="text-slate-500">Fluent</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-1.5">
+                                <div class="bg-navy-900 h-1.5 rounded-full w-full"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between font-medium mb-1">
+                                <span class="text-navy-900">English</span>
+                                <span class="text-slate-500">Intermediate</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-1.5">
+                                <div class="bg-gold-500 h-1.5 rounded-full w-3/4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-navy-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-xs uppercase font-bold tracking-widest text-gold-400 mb-2">Kontak Saya</h2>
+                    <h3 class="text-3xl font-bold mb-4">Mari Berkolaborasi dalam Proyek Perencanaan</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-8">
+                        Saya selalu terbuka untuk diskusi mengenai perencanaan wilayah, analisis data spasial, studi lingkungan, maupun peluang karir terkait.
+                    </p>
+                    <div class="space-y-4 text-sm">
+                        <a href="mailto:kartikamaulanni@gmail.com" class="flex items-center space-x-3 text-slate-300 hover:text-gold-400 transition-colors">
+                            <i class="fas fa-envelope text-gold-400"></i>
+                            <span>kartikamaulanni@gmail.com</span>
+                        </a>
+                        <a href="tel:082180693711" class="flex items-center space-x-3 text-slate-300 hover:text-gold-400 transition-colors">
+                            <i class="fas fa-phone text-gold-400"></i>
+                            <span>082180693711</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nandakartika" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 text-slate-300 hover:text-gold-400 transition-colors">
+                            <i class="fab fa-linkedin text-gold-400"></i>
+                            <span>linkedin.com/in/nandakartika</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-6 sm:p-8 rounded-2xl backdrop-blur-sm">
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Pesan Anda berhasil terkirim!');">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Nama Lengkap</label>
+                            <input type="text" required placeholder="Nama Anda" class="w-full px-4 py-2.5 bg-navy-800 border border-slate-700 rounded-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Email</label>
+                            <input type="email" required placeholder="nama@email.com" class="w-full px-4 py-2.5 bg-navy-800 border border-slate-700 rounded-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Pesan</label>
+                            <textarea rows="4" required placeholder="Tuliskan pesan atau penawaran kerja sama..." class="w-full px-4 py-2.5 bg-navy-800 border border-slate-700 rounded-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold text-sm rounded-lg transition-colors">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-6 bg-navy-900 border-t border-slate-800 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Nanda Kartika Maulani. Hak Cipta Dilindungi Undang-Undang.</p>
+    </footer>
+
+</body>
+</html>
